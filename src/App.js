@@ -64,9 +64,12 @@ function App() {
          <Avatar variant="rounded" sx={{ width: 150, height: 160, bgcolor: "black", marginLeft:12,marginTop:5 }}>
             <img src={data!==null?data.avatar:""} alt="avatar"/>
             </Avatar> 
-            <TextField  variant="standard" sx={{width: 250, margin:1}} label="Name:" value={data!==null?(data.first_name + " " +data.last_name):""}/><br/> 
-            <TextField  variant="standard" sx={{width: 250,margin:1}} label="Email:" value={data!==null?data.email:""}/> <br/> 
-            <TextField  variant="standard" sx={{width: 250,marginBottom:3}} label="Description:" value={data!==null?"Hi! I'm "+data.first_name+". Nice to meet you.":""}/><br/> 
+
+            <TextField id="descrip" variant="standard" sx={{width: 250, margin:1}} label="Name:" value={data!==null?(data.first_name + " " +data.last_name):""}/><br/> 
+
+            <TextField id="descrip" variant="standard" sx={{width: 250,margin:1}} label="Email:" value={data!==null?data.email:""}/> <br/> 
+            
+            <TextField id="descrip" variant="standard" sx={{width: 250,marginBottom:3, }} label="Description:" value={data!==null?"Hi! I'm "+data.first_name+". Nice to meet you.":""}/><br/> 
 
              
             {/* <p>Name:{data!==null?(data.first_name + " " +data.last_name):""}</p>
