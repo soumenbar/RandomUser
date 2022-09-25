@@ -61,7 +61,7 @@ function App() {
         
 
        {data!==null &&<Paper elevation={10} sx={{width:350, bgcolor:"rgb(218, 207, 207)"}}>
-         <Avatar variant="rounded" sx={{ width: 140, height: 145, bgcolor: "rgb(89, 0, 253)", marginLeft:12,marginTop:5 }}>
+         <Avatar variant="rounded" sx={{ width: 140, height: 150, bgcolor: "black", marginLeft:12,marginTop:5 }}>
             <img src={data!==null?data.avatar:""} alt="avatar"/>
             </Avatar> 
 
