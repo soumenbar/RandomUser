@@ -46,7 +46,7 @@ function App() {
    
   return (
     <div className="App" style={{textAlign:"center"}}>
-      <TextField id="standard-basic" label="User Id" variant="standard" error={error} onChange={(e)=>handleInput(parseInt(e.target.value))} />
+      <TextField id="standard-basic" type="number" label="User Id" variant="standard" error={error} onChange={(e)=>handleInput(parseInt(e.target.value))} />
 
 
       {/* User Id: <input type="number" placeholder="type 1 to 12" onChange={(e)=>handleInput(parseInt(e.target.value))}></input> */}
@@ -61,7 +61,7 @@ function App() {
         
 
        {data!==null &&<Paper elevation={10} sx={{width:350, bgcolor:"rgb(218, 207, 207)"}}>
-         <Avatar variant="rounded" sx={{ width: 150, height: 160, bgcolor: "black", marginLeft:12,marginTop:5 }}>
+         <Avatar variant="rounded" sx={{ width: 140, height: 145, bgcolor: "rgb(89, 0, 253)", marginLeft:12,marginTop:5 }}>
             <img src={data!==null?data.avatar:""} alt="avatar"/>
             </Avatar> 
 
